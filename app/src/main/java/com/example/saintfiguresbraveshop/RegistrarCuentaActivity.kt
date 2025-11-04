@@ -3,6 +3,7 @@ package com.example.saintfiguresbraveshop
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +23,7 @@ class RegistrarCuentaActivity : AppCompatActivity() {
         }
 
         val registerButton = findViewById<Button>(R.id.buttonRegistrarCuenta)
+        val backToLoginLink = findViewById<TextView>(R.id.linkVolverLogin)
 
         registerButton.setOnClickListener {
             AlertDialog.Builder(this)
@@ -34,6 +36,9 @@ class RegistrarCuentaActivity : AppCompatActivity() {
                     finish()
                 }
                 .show()
+        }
+            backToLoginLink.setOnClickListener {
+                finish()
         }
     }
 }
