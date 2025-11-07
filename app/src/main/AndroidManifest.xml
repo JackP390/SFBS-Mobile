@@ -28,6 +28,8 @@
 
         <activity android:name=".RecuperarClaveActivity" android:exported="false" />
 
+        <activity android:name=".NewsActivity" android:exported="false"/>
+
     </application>
 
 </manifest>
