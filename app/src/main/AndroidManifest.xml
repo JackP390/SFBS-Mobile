@@ -30,6 +30,10 @@
 
         <activity android:name=".NewsActivity" android:exported="false"/>
 
+        <activity android:name=".AddNewsActivity" android:exported="false" />
+
+        <activity android:name=".ViewNewsActivity" android:exported="false" />
+
     </application>
 
 </manifest>

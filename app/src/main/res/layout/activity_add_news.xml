@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nueva Noticia"
+            android:textColor="#E9E3FF"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/headerContainer">
+
+        <EditText
+            android:id="@+id/etNewsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título Noticia"
+            android:textColor="@color/white"
+            android:textColorHint="#C7C3D9"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/etNewsSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bajada"
+            android:textColor="@color/white"
+            android:textColorHint="#C7C3D9"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/etNewsImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="URL Imagen (Link)"
+            android:textColor="@color/white"
+            android:textColorHint="#C7C3D9"
+            android:inputType="textUri"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/etNewsContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cuerpo"
+            android:gravity="top"
+            android:lines="5"
+            android:textColor="@color/white"
+            android:textColorHint="#C7C3D9"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Volver"
+                android:backgroundTint="#555555"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="5dp"/>
+
+            <Button
+                android:id="@+id/btnSaveNews"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Crear Noticia"
+                android:background="@drawable/btn_gradient"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
