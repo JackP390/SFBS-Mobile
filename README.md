@@ -39,3 +39,8 @@ La aplicación cumple con los siguientes Aprendizajes Esperados (AE) y Criterios
 * **Lenguaje:** Kotlin
 * **IDE:** Android Studio
 * **Diseño:** Material Components, ConstraintLayout
+
+## 📸 Galería
+| Login | Registro | Recuperar Clave |
+|:---:|:---:|:---:|
+| <img src="screenshots/login.jpg" width="200"> | <img src="screenshots/register.jpg" width="200"> | <img src="screenshots/reset_password.jpg" width="200"> |
